@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lạng Sơn Travel</title>
+        <title>Lạng Sơn Travel | Chùa Tam Thanh</title>
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -105,7 +105,7 @@
         <header class="header">
             <div class="header__inner">
                 <!-- Logo -->
-                <a href="">
+                <a href="./index.html">
                     <div class="logo">
                         <div class="logo__img-wrap">
                             <img
@@ -121,18 +121,20 @@
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a
-                                href="#hero"
-                                class="navbar__link navbar__link--active"
-                            >
+                            <a href="./index.html" class="navbar__link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#place" class="navbar__link">Điểm đến</a>
+                            <a href="#place" class="navbar__link"> Điểm đến </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#tour" class="navbar__link">Đặt tour</a>
+                            <a
+                                href="#tour"
+                                class="navbar__link navbar__link--active"
+                            >
+                                Đặt tour
+                            </a>
                         </li>
                         <li class="navbar__item">
                             <a href="#contact" class="navbar__link">Liên hệ</a>
@@ -145,491 +147,348 @@
                 </div>
             </div>
         </header>
-        <main class="main">
-            <!-- Hero -->
-            <section class="hero" id="hero">
-                <div class="hero__content">
-                    <h2 class="hero__title">Khám phá vẻ đẹp của Lạng Sơn</h2>
-                    <p class="hero__desc">
-                        Cùng nhau khám phá những vẻ đẹp bình dị của Lạng Sơn
-                    </p>
-                    <a href="#!" class="btn hero__btn">Khám phá ngay</a>
+        <!-- <div class="loader"></div> -->
+        <main>
+            <section class="tour__detail">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="./index.html" class="breadcrumb__link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <div class="breadcrumb__separate"></div>
+                            <a href="#!" class="breadcrumb__link"> Tour </a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <div class="breadcrumb__separate"></div>
+                            <a
+                                href="#!"
+                                class="breadcrumb__link breadcrumb__link--active"
+                                id="breadcrumb__title"
+                            >
+                                Tour Đền Bắc Lệ - Đền Mẫu Đồng Đăng - Chùa Tam
+                                Thanh
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="search__wrap">
-                    <div class="search__input-wrap">
-                        <input
-                            type="text"
-                            name=""
-                            id=""
-                            class="search__input"
-                            placeholder="Tìm kiếm ..."
-                        />
+                <div class="tour__detail-inner">
+                    <div class="tour__detail-left">
+                        <ul class="tour__detail-controls">
+                            <li class="tour__detail-control">
+                                <a
+                                    href="#introduce"
+                                    class="tour__detail-control-link"
+                                >
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="tour__detail-control">
+                                <a
+                                    href="#schedule"
+                                    class="tour__detail-control-link"
+                                >
+                                    Lịch trình
+                                </a>
+                            </li>
+                            <li class="tour__detail-control">
+                                <a
+                                    href="#clause"
+                                    class="tour__detail-control-link"
+                                >
+                                    Điều khoản
+                                </a>
+                            </li>
+                            <li class="tour__detail-control">
+                                <a
+                                    href="#rating"
+                                    class="tour__detail-control-link"
+                                >
+                                    Đánh giá
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <button class="btn search__btn">
-                        <img
-                            src="./assets/icon/search.svg"
-                            alt=""
-                            class="search__btn-icon"
-                        />
-                    </button>
-                </div>
-            </section>
-            <!-- Branch -->
-            <section class="branch">
-                <div class="container">
-                    <div class="branch__inner">
-                        <h2 class="branch__title">
-                            Vì sao nên chọn du lịch Lạng Sơn
-                        </h2>
-                        <div class="branch__list">
-                            <div class="branch__item">
-                                <h3 class="branch__item-title">
-                                    Dịch vụ đẳng cấp
+                    <div class="tour__detail-right">
+                        <div class="tour__detail-content">
+                            <h2 id="introduce">Giới thiệu</h2>
+                            <p>
+                                Trong hành trình du lịch Xứ Lạng, Mẫu Sơn vẫn
+                                luôn là địa danh được nhiều du khách nhắc tới và
+                                tìm đến. Từ thành phố Lạng Sơn theo quốc lộ 4B
+                                đi chừng 30km du khách sẽ đến khu du lịch Mẫu
+                                Sơn. Nơi đây có phong cảnh thiên nhiên hữu tình.
+                                Mùa đông, khi nhiệt độ xuống thấp thường có băng
+                                tuyết. Mùa hè, khí hậu mát mẻ, dễ chịu.
+                            </p>
+                            <p>
+                                <span>Điểm đặc biệt trong hành trình:</span>
+                            </p>
+                            <p class="tour__detail-content-check">
+                                Tham quan những danh thắng nổi tiếng tại Lạng
+                                Sơn như Động Tam Thanh - Chùa Tam Thanh, ngắm
+                                bức tượng người phụ nữ nổi tiếng chung thuỷ:
+                                Nàng Tô Thị bồng con.
+                            </p>
+                            <p class="tour__detail-content-check">
+                                Chụp hình và tự do tham quan Mẫu Sơn, nơi được
+                                mệnh danh là Đà Lạt vùng Đông Bắc bởi khí hậu
+                                hiền hòa, mát mẻ, khung cảnh nên thơ.
+                            </p>
+                            <p class="tour__detail-content-check">
+                                Thưởng thức những món đặc sản nổi tiếng của vùng
+                                văn hóa xứ Lạng như Vịt quay lá móc mật, khâu
+                                nhục, khoai môn Lệ Phố.
+                            </p>
+                            <p class="tour__detail-content-check">
+                                Dừng chân tại thị trấn Đồng Đăng, quý đoàn vào
+                                viếng thăm đền Mẫu, cầu mong đức Mẫu ban cho:
+                                Phúc, Lộc, Thọ...
+                            </p>
+                            <h2 id="schedule">Lịch trình</h2>
+                            <div class="schedule__list">
+                                <h3>
+                                    NGÀY 01: HÀ NỘI - LẠNG SƠN - TAM THANH - NHỊ
+                                    THANH - MẪU SƠN ( Ăn trưa/ tối)
                                 </h3>
-                                <p class="branch__item-desc">
-                                    Đến với Lạng Sơn du khách sẽ được trải
-                                    nghiệm những dịch vụ đẳng cấp, chuyên
-                                    nghiệp. Chắc chắn sẽ làm hài lòng chuyến đi
-                                    của bạn.
+                                <p>
+                                    <span>5h00:</span> Xe và Hướng dẫn viên của
+                                    PYS Travel đón đoàn tại điểm hẹn, khởi hành
+                                    đi Lạng Sơn. Trên đường đi Quý khách nghỉ
+                                    dừng chân tại Thị trấn Mẹt và tự do ăn sáng,
+                                    sau đó đoàn tiếp tục hành trình, Quý khách
+                                    ngắm cảnh núi rừng Đông Bắc Việt Nam.
+                                </p>
+                                <p>
+                                    <span>9h00:</span> Đoàn đến Lạng Sơn: Thăm
+                                    quan<span>
+                                        động Tam Thanh - chùa Tam Thanh
+                                    </span>
+                                    và ngắm cảnh người phụ nữ nổi tiếng chung
+                                    thuỷ: Nàng Tô Thị bồng con sau đó đi thăm
+                                    động Nhị Thanh…
+                                </p>
+                                <p>
+                                    <span>12h00:</span> Trưa quý khách khởi hành
+                                    về <span>Thành phố Lạng Sơn</span>
+                                    dùng bữa trưa tại nhà hàng với những đặc sản
+                                    nổi tiếng của vùng văn hoá xứ Lạng như: Vịt
+                                    quay lá móc mật, khâu nhục, khoai môn Lệ
+                                    Phố.
+                                </p>
+                                <p>
+                                    <span>13h00:</span> Xe đưa quý khách đi
+                                    <span>Mẫu Sơn</span> (cách Lạng Sơn 30Km).
+                                </p>
+                                <p>
+                                    <span>14h00:</span> Đến Mẫu Sơn quý khách
+                                    chụp hình và tự do thăm quan
+                                    <span>Mẫu Sơn</span> (nơi được mệnh danh là
+                                    Đà Lạt của vùng Đông Bắc với các đặc sản nổi
+                                    tiếng như: Đào tiên, chè tuyết, rượu thảo
+                                    mộc...Với khí hậu hiền hoà, mát mẻ và khung
+                                    cảnh nên thơ tuyệt đẹp).
+                                </p>
+                                <p>
+                                    <span>16h30:</span> Đoàn quay trở lại thành
+                                    phố Lạng Sơn. Nhận phòng nghỉ tại
+                                    <span>Vinpearl Lạng Sơn</span>.
+                                </p>
+                                <p>
+                                    <span>19h00:</span> Đoàn ăn tối, thưởng thứ
+                                    những món ăn của núi rừng Lạng Sơn. Sau bữa
+                                    tối, đoàn tự do dạo chơi và nghỉ đêm tại
+                                    Lạng Sơn.
+                                </p>
+                                <h3>
+                                    NGÀY 02: LẠNG SƠN - ĐỒNG ĐĂNG - ĐỀN MẪU - HÀ
+                                    NỘI ( Ăn: sáng/ trưa)
+                                </h3>
+                                <p>
+                                    <span>7h00:</span> Quý khách dậy sớm, ăn
+                                    sáng tại khách sạn.
+                                </p>
+                                <p>
+                                    <span>09h30:</span> Quý khách làm thủ tục
+                                    trả phòng khách sạn, xe và HDV đưa Quý khách
+                                    đến thị trấn Đồng Đăng, quý đoàn vào viếng
+                                    thăm đền Mẫu, cầu mong đức Mẫu ban cho:
+                                    Phúc, Lộc, Thọ….
+                                </p>
+                                <p>
+                                    <span>11h00:</span> đoàn dùng bữa trưa tại
+                                    nhà hàng, thưởng thức các đặc sản của xứ
+                                    Lạng như: Vịt quay Bắc Kinh, lợn sữa quay,
+                                    khau nhục...
+                                </p>
+                                <p>
+                                    <span>13h00 -15h00:</span> Quý khách tự do
+                                    mua sắm tại
+                                    <span>chợ cửa khẩu Tân Thanh</span> - chợ
+                                    biên giới lớn nhất Lạng Sơn
+                                </p>
+                                <p>
+                                    <span>15h00:</span> Đoàn lên xe, khởi hành
+                                    về Hà Nội. Trên đường về, Quý khách nghỉ
+                                    dừng chân tại Thị Trấn Mẹt, tự do mua những
+                                    đặc sản của địa phương về làm quà cho người
+                                    thân và bạn bè sau đó tiếp tục hành trình về
+                                    Hà Nội.
+                                </p>
+                                <p>
+                                    <span>19h00:</span> Về tới Hà Nội, kết thúc
+                                    chương trình, chia tay và hẹn gặp lại quý
+                                    kháchtrong các chương trình du lịch tiếp
+                                    theo.
                                 </p>
                             </div>
-                            <div class="branch__item">
-                                <h3 class="branch__item-title">
-                                    Người dân thân thiện
-                                </h3>
-                                <p class="branch__item-desc">
-                                    Đến với Lạng Sơn du khách sẽ được gặp gỡ
-                                    những con người thân thiện, hiếu khách, rất
-                                    sẵn lòng giúp đỡ khi bạn cần giúp đỡ, chắc
-                                    chắn sẽ làm chuyển đi của bạn càng thú vị.
-                                </p>
-                            </div>
-                            <div class="branch__item">
-                                <h3 class="branch__item-title">
-                                    Văn hóa đa dạng
-                                </h3>
-                                <p class="branch__item-desc">
-                                    Đến với Lạng Sơn du khách sẽ được thưởng
-                                    thức các món ăn hấp dẫn, các hoạt động văn
-                                    hóa đa dạng, độc đáo, chắc chắn sẽ là những
-                                    trải nghiệm khó quên trong chuyến đi của bạn
-                                </p>
-                            </div>
+                            <h2 id="clause">Điều khoản</h2>
+                            <p><span>GIÁ TOUR TRỌN GÓI:</span></p>
+                            <p>
+                                - Xe ô tô đời mới, máy lạnh vận chuyển theo
+                                chương trình tham quan
+                            </p>
+                            <p>
+                                - Hướng dẫn viên kinh nghiệm, nhiệt tình phục vụ
+                                suốt tuyến
+                            </p>
+                            <p>- Nước uống trên xe hàng ngày</p>
+                            <p>
+                                - Bảo hiểm du lịch: Mức trách nhiệm tối đa
+                                50.000.000VND/người/vụ
+                            </p>
+                            <p>
+                                - Vé thắng cảnh theo chương trình tham quan: 1
+                                người/lượt
+                            </p>
+                            <p>
+                                - Phòng nghỉ tiêu chuẩn khách sạn 5* Vinpearl
+                                hoặc Mường Thanh: 02 khách/phòng. Phòng 03 sẽ
+                                được bố trí nếu đoàn lẻ nam hoặc lẻ nữ.
+                            </p>
+                            <p>
+                                - Các bữa ăn chính theo chương trình tham quan:
+                                3 bữa chính (120.000VND/bữa), 1 bữa sáng (buffet
+                                tại khách sạn).
+                            </p>
+                            <p><span>KHÔNG BAO GỒM:</span></p>
+                            <p>- Thuế VAT</p>
+                            <p>
+                                - Chi phí cá nhân khác ngoài chương trình: giặt
+                                là, điện thoại, đồ uống trong các bữa
+                            </p>
+                            <p>- Chi phí lễ dâng hương.</p>
+                            <p>
+                                - Phụ thu phòng đơn: khách sạn Vinpearl 5*:
+                                800.000VND/khách/đêm
+                            </p>
+                            <p><span>Lưu ý:</span></p>
+                            <p>
+                                - Trẻ em từ 0-4 tuổi: Miễn phí, ăn chung với bố
+                                mẹ. (Hai người lớn chỉ được kèm 01 trẻ em. Từ
+                                trẻ em thứ 2 phụ thu 50% người lớn)
+                            </p>
+                            <p>
+                                - Trẻ em từ: 4 – dưới 11 tuổi: phụ thu 85% tour
+                            </p>
+                            <p>- Trẻ trên 11 tuổi: Tính như người lớn.</p>
+                            <p>
+                                - Quý khách vui lòng đặt dịch vụ trước dịp nghỉ
+                                lễ Kỷ Hợi để được báo giá tốt nhất.
+                            </p>
+                            <p><span>Chính sách hoàn hủy</span></p>
+                            <h2 id="rating">Đánh giá tour</h2>
+                        </div>
+                    </div>
+                    <div class="tour__price">
+                        <h3 class="tour__price-title">Giá tua trọn gói</h3>
+                        <p class="tour__price-price">1.980.000đ</p>
+                        <p class="tour__price-old">2.178.000đ</p>
+                        <div class="tour__price-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="tour__price-info">
+                            <p class="price-info__data">
+                                <img
+                                    src="./assets/icon/home.svg"
+                                    alt=""
+                                    class="price-info__icon"
+                                />
+                                Khởi hành từ: <span>Hà Nội</span>
+                            </p>
+                            <p class="price-info__data">
+                                <img
+                                    src="./assets/icon/location.svg"
+                                    alt=""
+                                    class="price-info__icon"
+                                />
+                                Điểm đến:
+                                <span>
+                                    Tour Du xuân Lễ chùa đầu năm mới 2025
+                                </span>
+                            </p>
+                            <p class="price-info__data">
+                                <img
+                                    src="./assets/icon/time.svg"
+                                    alt=""
+                                    class="price-info__icon"
+                                />
+                                Thời gian: <span>1 ngày 0 đêm</span>
+                            </p>
+                        </div>
+                        <a href="#!" class="btn price-info__btn">
+                            Đặt tour ngay
+                            <p>Giữ chỗ, chưa cần thanh toán</p>
+                        </a>
+
+                        <div class="tour__img-wrap">
+                            <img
+                                src="./assets/img/tour/tour-1.1.webp"
+                                alt=""
+                                class="tour__img"
+                            />
+                            <img
+                                src="./assets/img/tour/tour-1.2.webp"
+                                alt=""
+                                class="tour__img"
+                            />
+                            <img
+                                src="./assets/img/tour/tour-1.3.webp"
+                                alt=""
+                                class="tour__img"
+                            />
+                            <img
+                                src="./assets/img/tour/tour-1.4.webp"
+                                alt=""
+                                class="tour__img"
+                            />
+                            <img
+                                src="./assets/img/tour/tour-1.5.webp"
+                                alt=""
+                                class="tour__img"
+                            />
+                            <img
+                                src="./assets/img/tour/tour-1.6.webp"
+                                alt=""
+                                class="tour__img"
+                            />
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Place -->
-            <div class="place" id="place">
-                <div class="container">
-                    <div class="place__inner">
-                        <h2 class="place__title">Điểm đến hấp dẫn</h2>
-                        <div class="place__list">
-                            <!-- Item 1 -->
-                            <div class="place__item">
-                                <a href="./detail.html?id=tam-thanh">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/chuatamthanh.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=tam-thanh">
-                                        <h3 class="place__item-title">
-                                            Chùa tam thanh
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        TP.Lạng Sơn
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=tam-thanh"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="place__item" id="nhi-thanh">
-                                <a href="./detail.html?id=nhi-thanh">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/place-2.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=nhi-thanh">
-                                        <h3 class="place__item-title">
-                                            Động Nhị Thanh
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        TP.Lạng Sơn
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=nhi-thanh"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="place__item">
-                                <a href="./detail.html?id=den-ki-cung">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/place-3.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=den-ki-cung">
-                                        <h3 class="place__item-title">
-                                            Đền Kỳ Cùng
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        TP.Lạng Sơn
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=den-ki-cung"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 4 -->
-                            <div class="place__item">
-                                <a href="./detail.html?id=den-bac-le">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/place-4.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=den-bac-le">
-                                        <h3 class="place__item-title">
-                                            Đền Bắc Lệ
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        Huyện Hữu Lũng
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=den-bac-le"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 5 -->
-                            <div class="place__item">
-                                <a href="./detail.html?id=suoi-mo-mam">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/place-5.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=suoi-mo-mam">
-                                        <h3 class="place__item-title">
-                                            Suối Mỏ Mắm
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        Huyện Bắc Sơn
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=suoi-mo-mam"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 6 -->
-                            <div class="place__item">
-                                <a href="./detail.html?id=nui-mau-son">
-                                    <div class="place__item-img-wrap">
-                                        <img
-                                            src="./assets/img/place-6.jpg"
-                                            alt=""
-                                            class="place__item-img"
-                                        />
-                                    </div>
-                                </a>
-                                <div class="place__item-info">
-                                    <a href="./detail.html?id=nui-mau-son">
-                                        <h3 class="place__item-title">
-                                            Núi Mẫu Sơn
-                                        </h3>
-                                    </a>
-                                    <p class="place__item-address">
-                                        <img
-                                            src="./assets/icon/location.svg"
-                                            alt=""
-                                            class="place__item-icon"
-                                        />
-                                        Huyện Lộc Bình
-                                    </p>
-                                </div>
-                                <a
-                                    href="./detail.html?id=nui-mau-son"
-                                    class="btn place__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tour -->
-            <div class="tour" id="tour">
-                <div class="container">
+                <h2 class="tour__detail-more">Có thể bạn quan tâm</h2>
+                <!-- Tour -->
+                <div class="tour" id="tour">
                     <div class="tour__inner">
-                        <h2 class="tour__title">Tour phổ biến</h2>
                         <div class="tour__list">
-                            <!-- Item 1 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
-                                    <div class="tour__item-img-wrap">
-                                        <img
-                                            src="./assets/img/tour-1.webp"
-                                            alt=""
-                                            class="tour__item-img"
-                                        />
-                                        <a href="#!" class="tour__item-cta">
-                                            Đặt tour
-                                        </a>
-                                    </div>
-                                </a>
-                                <a href="./tour.html">
-                                    <h3 class="tour__item-name">
-                                        Tour Đền Bắc Lệ - Đền Mẫu Đồng Đăng -
-                                        Chùa Tam Thanh
-                                    </h3>
-                                </a>
-                                <div class="tour__item-info">
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/money.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Giá: 750.000đ
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/time.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Thời gian: 1 ngày 0 đêm
-                                        </p>
-                                    </div>
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/home.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Khởi hành: Hà Nội
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/location.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Điểm đến: TP.Lạng Sơn
-                                        </p>
-                                    </div>
-                                </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
-                                    <div class="tour__item-img-wrap">
-                                        <img
-                                            src="./assets/img/tour-2.webp"
-                                            alt=""
-                                            class="tour__item-img"
-                                        />
-                                        <a href="#!" class="tour__item-cta">
-                                            Đặt tour
-                                        </a>
-                                    </div>
-                                </a>
-                                <a href="./tour.html">
-                                    <h3 class="tour__item-name">
-                                        Tour Mẫu Sơn - Lạng Sơn
-                                    </h3>
-                                </a>
-                                <div class="tour__item-info">
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/money.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Giá: 1.980.000đ
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/time.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Thời gian: 2 ngày 1 đêm
-                                        </p>
-                                    </div>
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/home.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Khởi hành: Hà Nội
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/location.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Điểm đến: TP.Lạng Sơn
-                                        </p>
-                                    </div>
-                                </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
-                                    <div class="tour__item-img-wrap">
-                                        <img
-                                            src="./assets/img/tour-3.webp"
-                                            alt=""
-                                            class="tour__item-img"
-                                        />
-                                        <a href="#!" class="tour__item-cta">
-                                            Đặt tour
-                                        </a>
-                                    </div>
-                                </a>
-                                <a href="./tour.html">
-                                    <h3 class="tour__item-name">
-                                        Tour Hà Nội - Bắc Sơn - Lạng Sơn -
-                                        Vinpearl
-                                    </h3>
-                                </a>
-                                <div class="tour__item-info">
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/money.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Giá: Liên hệ
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/time.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Thời gian: 2 ngày 1 đêm
-                                        </p>
-                                    </div>
-                                    <div class="tour__item-row">
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/home.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Khởi hành: Hà Nội
-                                        </p>
-                                        <p class="tour__item-data">
-                                            <img
-                                                src="./assets/icon/location.svg"
-                                                alt=""
-                                                class="tour__item-icon"
-                                            />
-                                            Điểm đến: TP.Lạng Sơn
-                                        </p>
-                                    </div>
-                                </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
-                                    Xem chi tiết
-                                </a>
-                            </div>
                             <!-- Item 4 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
+                            <div class="tour__item tour__item-more">
+                                <a href="#!">
                                     <div class="tour__item-img-wrap">
                                         <img
                                             src="./assets/img/tour-4.webp"
@@ -641,7 +500,7 @@
                                         </a>
                                     </div>
                                 </a>
-                                <a href="./tour.html">
+                                <a href="#!">
                                     <h3 class="tour__item-name">
                                         Tour Hà Nội - Hữu Lũng - Lạng Sơn - Bắc
                                         Sơn
@@ -685,16 +544,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
+                                <a href="#!" class="btn tour__item-btn">
                                     Xem chi tiết
                                 </a>
                             </div>
                             <!-- Item 5 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
+                            <div class="tour__item tour__item-more">
+                                <a href="#!">
                                     <div class="tour__item-img-wrap">
                                         <img
                                             src="./assets/img/tour-5.webp"
@@ -706,7 +562,7 @@
                                         </a>
                                     </div>
                                 </a>
-                                <a href="./tour.html">
+                                <a href="#!">
                                     <h3 class="tour__item-name">
                                         Tour Hà Nội - Bắc Sơn - Lạng Sơn
                                     </h3>
@@ -749,16 +605,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
+                                <a href="#!" class="btn tour__item-btn">
                                     Xem chi tiết
                                 </a>
                             </div>
                             <!-- Item 6 -->
-                            <div class="tour__item">
-                                <a href="./tour.html">
+                            <div class="tour__item tour__item-more">
+                                <a href="#!">
                                     <div class="tour__item-img-wrap">
                                         <img
                                             src="./assets/img/tour-6.webp"
@@ -770,7 +623,7 @@
                                         </a>
                                     </div>
                                 </a>
-                                <a href="./tour.html">
+                                <a href="#!">
                                     <h3 class="tour__item-name">
                                         Tour Hà Nội - Bắc Sơn - Lạng Sơn
                                     </h3>
@@ -813,11 +666,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a
-                                    href="./tour.html"
-                                    class="btn tour__item-btn"
-                                >
-                                    Xem chi tiết
+                                <a href="#!" class="btn tour__item-btn"
+                                    >Xem chi tiết
                                 </a>
                             </div>
                         </div>
@@ -912,7 +762,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- Contact -->
             <section class="contact" id="contact">
                 <div class="container">
@@ -1004,7 +854,7 @@
         </main>
         <footer class="footer">
             <!-- Logo -->
-            <a href="">
+            <a href="./index.html">
                 <div class="logo">
                     <div class="logo__img-wrap">
                         <img
@@ -1087,11 +937,7 @@
                 </form>
             </div>
         </div>
-        <audio
-            class="audio"
-            loop
-            src="./assets/audio/Về Lạng Sơn - Sèn Hoàng Mỹ Lam   Có ai về xứ Lạng cùng em không (1).m4a"
-        ></audio>
+        <script src="./assets/js/data.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>

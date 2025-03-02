@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lạng Sơn Travel | Chùa Tam Thanh</title>
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <!-- Logo -->
+                <a href="./index.html">
+                    <div class="logo">
+                        <div class="logo__img-wrap">
+                            <img
+                                src="./assets/img/logo.png"
+                                alt=""
+                                class="logo__img"
+                            />
+                        </div>
+                        <h2 class="logo__title">Lang Son Travel</h2>
+                    </div>
+                </a>
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="./index.html" class="navbar__link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a
+                                href="#place"
+                                class="navbar__link navbar__link--active"
+                            >
+                                Điểm đến
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#tour" class="navbar__link">Đặt tour</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- CTA -->
+                <div class="header__cta">
+                    <a href="#!" class="btn header__cta-btn">Đặt ngay</a>
+                </div>
+            </div>
+        </header>
+        <div class="loader"></div>
+        <main
+            class="main"
+            id="place__detail"
+            style="opacity: 0; visibility: hidden"
+        >
+            <section class="place__detail">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="./index.html" class="breadcrumb__link">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <div class="breadcrumb__separate"></div>
+                                <a href="#!" class="breadcrumb__link">
+                                    Điểm đến
+                                </a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <div class="breadcrumb__separate"></div>
+                                <a
+                                    href="#!"
+                                    class="breadcrumb__link breadcrumb__link--active"
+                                    id="breadcrumb__title"
+                                >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="place__detail-inner">
+                        <h1 class="place__detail-title" id="place-title"></h1>
+                        <div class="place__detail-time">
+                            <div>
+                                <img
+                                    class="place__detail-time-icon"
+                                    src="./assets/icon/calander.svg"
+                                    alt=""
+                                />
+                                <p
+                                    class="place__detail-time-title"
+                                    id="date"
+                                ></p>
+                            </div>
+                            <div>
+                                <img
+                                    class="place__detail-time-icon"
+                                    src="./assets/icon/eyes.svg"
+                                    alt=""
+                                />
+                                <p
+                                    class="place__detail-time-title"
+                                    id="views"
+                                ></p>
+                            </div>
+                        </div>
+                        <div class="place__detail-content" id="content"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <h2 class="contact__title">Thông tin liên hệ</h2>
+                        <div class="socials">
+                            <h3 class="socials__title">
+                                Kết nối với chúng tôi qua
+                            </h3>
+                            <div class="socials__list">
+                                <a href="#!">
+                                    <div class="socials__item">
+                                        <img
+                                            src="./assets/icon/facebook.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                                <a href="#!">
+                                    <div class="socials__item">
+                                        <img
+                                            src="./assets/icon/zalo.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                                <a href="#!">
+                                    <div class="socials__item">
+                                        <img
+                                            src="./assets/icon/ytb.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact__wrap">
+                            <div class="contact__left">
+                                <p class="tour__contact-data contact__desc">
+                                    <img
+                                        src="./assets/icon/location.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+                                    Địa chỉ:
+                                    <span>
+                                        148, Nguyễn Du, Đông Kinh, Tp. Lạng Sơn
+                                    </span>
+                                </p>
+                                <p class="tour__contact-data contact__desc">
+                                    <img
+                                        src="./assets/icon/phone.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+                                    Điện thoại:
+                                    <a href="tel:+0336990472">0336990472</a>
+                                </p>
+                                <p class="tour__contact-data contact__desc">
+                                    <img
+                                        src="./assets/icon/email.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+                                    Email:
+                                    <a
+                                        href="mailto:hoangbit185@gmail.com"
+                                        class=""
+                                    >
+                                        hoangbit185@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="contact__right">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d837.8549651933228!2d106.76043800036899!3d21.840576853558748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36b54d3c119def29%3A0xe99abab1700f1a14!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIFPGsCBwaOG6oW0gTOG6oW5nIFPGoW4gQ8ahIFPhu58gMg!5e1!3m2!1svi!2s!4v1740754535679!5m2!1svi!2s"
+                                    width="600"
+                                    height="450"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <!-- Logo -->
+            <a href="./index.html">
+                <div class="logo">
+                    <div class="logo__img-wrap">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="logo__img"
+                        />
+                    </div>
+                    <h2 class="logo__title">Lang Son Travel</h2>
+                </div>
+            </a>
+            <p class="footer__desc">&copy; Bản quyền thuộc về biteric.id.vn</p>
+            <p class="tour__contact-data contact__desc">
+                <img
+                    src="./assets/icon/phone.svg"
+                    alt=""
+                    class="contact__icon"
+                />
+                Điện thoại:
+                <a href="tel:+0336990472">0336990472</a>
+            </p>
+        </footer>
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__inner">
+                <form action="" class="form">
+                    <button class="modal__close">✖</button>
+                    <div class="form__group">
+                        <label for="name" class="form__label"> Họ tên: </label>
+                        <div class="form__input-wrap">
+                            <input
+                                type="text"
+                                name="Name"
+                                id="name"
+                                class="form__input"
+                                placeholder="Nhập họ tên"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label"> Email </label>
+                        <div class="form__input-wrap">
+                            <input
+                                type="email"
+                                name="Email"
+                                id="email"
+                                class="form__input"
+                                placeholder="Nhập email của bạn"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="number" class="form__label">
+                            Số điện thoại
+                        </label>
+                        <div class="form__input-wrap">
+                            <input
+                                type="number"
+                                name="Number"
+                                id="number"
+                                class="form__input"
+                                placeholder="Nhập số điện thoại"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="text" class="form__label"> Lời nhắn </label>
+                        <textarea
+                            name=""
+                            id="text"
+                            class=""
+                            placeholder="Để lại lời nhắn cho chúng tôi"
+                        ></textarea>
+                    </div>
+                    <button class="form__submit modal__btn">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <script src="./assets/js/data.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

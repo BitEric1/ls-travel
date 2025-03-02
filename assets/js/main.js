@@ -33,7 +33,47 @@ document.addEventListener("DOMContentLoaded", () => {
             .play()
             .catch((error) => console.log("Trình duyệt chặn phát: ", error));
     }
-    window.addEventListener('beforeunload', () => {
+    window.addEventListener("beforeunload", () => {
         audio.pause();
-    })
+    });
 });
+
+document.addEventListener(
+    "click",
+    function () {
+        const audio = document.querySelector(".audio");
+        if (audio.paused) {
+            audio.play();
+        }
+    },
+    { once: true }
+);
+
+const loader = document.querySelector(".loader");
+const placeDetail = document.getElementById("place__detail");
+
+loader.style.display = "block";
+placeDetail.style.opacity = 0;
+placeDetail.style.visibility = "hidden";
+
+const urlParams = new URLSearchParams(window.location.search);
+const placeId = urlParams.get("id");
+
+setTimeout(() => {
+    if (places[placeId]) {
+        document.title = places[placeId].title;
+        document.getElementById("breadcrumb__title").textContent =
+            places[placeId].breadcrumb;
+        document.getElementById("place-title").textContent =
+            places[placeId].title;
+        document.getElementById("date").textContent = places[placeId].date;
+        document.getElementById("views").textContent = places[placeId].views;
+        document.getElementById("content").innerHTML = places[placeId].content;
+    } else {
+        document.getElementById("content").innerHTML =
+            "<p>Không tìm thấy nội dung!</p>";
+    }
+    loader.style.display = "none";
+    placeDetail.style.opacity = 1;
+    placeDetail.style.visibility = "visible";
+}, 1000);
