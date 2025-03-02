@@ -516,7 +516,7 @@ body {
     height: 40px;
     overflow: hidden;
     padding: 0 16px;
-    border-radius: 30px;
+    border-radius: 8px;
     background-color: #fff;
     border: 1px solid var(--main-color);
 }

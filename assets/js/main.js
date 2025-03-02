@@ -29,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.pathname === "/" ||
         window.location.pathname === "/index.html"
     ) {
-        audio
-            .play()
-            .catch((error) => console.log("Trình duyệt chặn phát: ", error));
+        audio.play();
+        audio.volume = (0.2).catch((error) =>
+            console.log("Trình duyệt chặn phát: ", error)
+        );
     }
     window.addEventListener("beforeunload", () => {
         audio.pause();
@@ -44,6 +45,7 @@ document.addEventListener(
         const audio = document.querySelector(".audio");
         if (audio.paused) {
             audio.play();
+            audio.volume = 0.2;
         }
     },
     { once: true }
